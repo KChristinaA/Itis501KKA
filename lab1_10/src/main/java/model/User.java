@@ -4,6 +4,7 @@ public class User {
     public String userName;
     public String password;
 
+    //уточнить private и getUserName
     public User() {
         userName = "";
         password = "";
