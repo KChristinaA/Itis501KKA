@@ -1,7 +1,7 @@
 package ru.itis.inf501;
 
 public class Animal {
-    private String name;
+    protected String name;
 
     public Animal(String name) {
         this.name = name;
@@ -16,7 +16,7 @@ public class Animal {
     }
 
     public void move() {
-
+        System.out.println(name + " moved");
     }
 
     public String toString() {
