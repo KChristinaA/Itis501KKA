@@ -14,5 +14,6 @@ public class Main {
         }
         System.out.println();
         new ChatHistory("Тимлид Анита");
+        //красоту наводите сами
     }
 }
