@@ -1,5 +1,6 @@
 public class Car extends Transport {
-    public String name = "Автомобиль";
-    public double cost = 7.5;
-    public int speed = 75;
+    public Car(){
+        super("Автомобиль", 7.5, 75);
+    }
+
 }

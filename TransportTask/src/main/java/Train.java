@@ -1,5 +1,5 @@
 public class Train extends Transport {
-    public String name = "Поезд";
-    public double cost = 6.0;
-    public int speed = 50;
+    public Train(){
+        super("Поезд", 6.0, 50);
+    }
 }

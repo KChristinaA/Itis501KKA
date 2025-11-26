@@ -4,12 +4,16 @@ public class Transport {
     protected double cost;
     protected int speed;
 
-    public Transport() {
-        this.name = this.getClass().getName();
-    }
+//    public Transport(String name, double cost, int speed) {
+//        this.name = name;
+//        this.cost = cost;
+//        this.speed = speed;
+//    }
 
-    public Transport(String name) {
-        this.name = name;
+    public Transport() {
+        name = "Транспорт";
+        cost = 0.0;
+        speed = 0;
     }
 
 
