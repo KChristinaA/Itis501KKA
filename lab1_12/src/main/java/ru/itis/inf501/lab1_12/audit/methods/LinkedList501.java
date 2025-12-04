@@ -69,7 +69,7 @@ public class LinkedList501 {
             }
             removedElem = current.next.value;
             current.next = current.next.next;
-        } //оч странно, переделать если что
+        }
         --count;
         return removedElem;
     }
@@ -82,7 +82,28 @@ public class LinkedList501 {
         return count;
     }
 
+    public void bubbleSort() {
+        for (int n = 0; n < count - 1; ++n) {
+            Node current = head;
+            Node previous = head;
+            for (int i = 0; i < count - 1; ++i) {
+                if (i != 0) {
+                    current = previous;
+                }
+                if (compareTo(current.value, current.next.value) > 0) {
+                    Node characteristic = current;
+                    current = current.next;
+                    current.next = characteristic;
+                    previous = current;
+                }
+                current = current.next;
+            }
+        }
+    }
 
+    private int compareTo(int currElem, int nextElem) {
+        return currElem - nextElem;
+    }
 
     public String toString() {
         String toReturn = "[";
